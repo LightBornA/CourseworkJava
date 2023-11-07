@@ -48,7 +48,6 @@
                 android:layout_width="72dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:contentDescription="Введите ip адрес"
                 android:hint="xxx.xxx.xxx.xxx"
                 android:layout_marginRight="25dp"
                 android:inputType="text">
@@ -75,7 +74,6 @@
                 android:layout_width="72dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:contentDescription="Введите маску вашей сети"
                 android:hint="xxx.xxx.xxx.xxx"
                 android:layout_marginRight="25dp"
                 android:inputType="text">
@@ -117,5 +115,15 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/goBackButtonIP"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="left|top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/arrow_go_back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
