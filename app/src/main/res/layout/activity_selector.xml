@@ -56,7 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="64dp"
                 android:layout_weight="1"
-                tools:srcCompat="@drawable/time_calc" />
+                app:srcCompat="@drawable/ip_calc" />
 
             <Button
                 android:id="@+id/ButtonIP"
@@ -81,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="64dp"
                 android:layout_weight="1"
-                tools:srcCompat="@drawable/time_calc" />
+                app:srcCompat="@drawable/time_calc" />
 
             <Button
                 android:id="@+id/ButtonTime"
@@ -106,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="64dp"
                 android:layout_weight="1"
-                tools:srcCompat="@drawable/password_gen" />
+                app:srcCompat="@drawable/password_gen" />
 
             <Button
                 android:id="@+id/ButtonGen"
@@ -131,7 +131,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="64dp"
                 android:layout_weight="1"
-                tools:srcCompat="@drawable/poe_calc" />
+                app:srcCompat="@drawable/poe_calc" />
 
             <Button
                 android:id="@+id/ButtonPoE"

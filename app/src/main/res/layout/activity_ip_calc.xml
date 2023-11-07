@@ -122,6 +122,7 @@
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_gravity="left|top"
+        android:src="@drawable/arrow_go_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/arrow_go_back" />
