@@ -15,6 +15,9 @@
         android:theme="@style/Theme.BessonowCWFinal"
         tools:targetApi="31">
         <activity
+            android:name=".TimeCalcActivity"
+            android:exported="false" />
+        <activity
             android:name=".IpCalcActivity"
             android:exported="false" />
         <activity
