@@ -109,10 +109,10 @@
                 app:srcCompat="@drawable/password_gen" />
 
             <Button
-                android:id="@+id/ButtonGen"
                 android:layout_width="128dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
+                android:id="@+id/ButtonGoPWD"
                 android:text="Генератор паролей"/>
         </LinearLayout>
 
@@ -134,7 +134,7 @@
                 app:srcCompat="@drawable/poe_calc" />
 
             <Button
-                android:id="@+id/ButtonPoE"
+                android:id="@+id/ButtonGoPoE"
                 android:layout_width="128dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"

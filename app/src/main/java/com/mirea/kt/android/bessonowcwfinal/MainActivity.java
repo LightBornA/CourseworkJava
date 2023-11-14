@@ -49,13 +49,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void authorization(String login, String password) {
         OkHttpClient client = new OkHttpClient();
-
         String API_URL = "https://android-for-students.ru/coursework/login.php";
 
         RequestBody formBody = new FormBody.Builder()
                 .add("lgn", "Student99544") //login для работы входа, для обхода написаны правильные значения
                 .add("pwd", "5L5AUFV")//password
-                .add("g", "RIBO-01-21")//
                 .build();
         Request req = new Request.Builder()
                 .url(API_URL)
@@ -72,23 +70,24 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
                 String res = response.body().string();
 
-                runOnUiThread(() -> {
+                /*runOnUiThread(() -> {
                     try {
                         JSONObject jsonObject = new JSONObject(res);
                         int resultCode = jsonObject.getInt("result_code");
                         String decodedResponse = StringEscapeUtils.unescapeJava(res);
                         Log.i("ans",decodedResponse);
-                        if (resultCode == 1) {
+                        if (resultCode == 1) {*/
                             Intent intent = new Intent(MainActivity.this, SelectorActivity.class);
                             startActivity(intent);
-                        } else if (resultCode == -1) {
+                       /* } else if (resultCode == -1) {
                             Toast.makeText(MainActivity.this, "Bad data", Toast.LENGTH_LONG).show();
                         }
                     } catch (JSONException e) {
                         throw new RuntimeException(e);
                     }
-                });
+                });*/
             }
         });
     }
 }
+
