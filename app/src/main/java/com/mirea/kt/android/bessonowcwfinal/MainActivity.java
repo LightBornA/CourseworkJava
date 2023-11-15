@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
         String API_URL = "https://android-for-students.ru/coursework/login.php";
 
         RequestBody formBody = new FormBody.Builder()
-                .add("lgn", "Student99544") //login для работы входа, для обхода написаны правильные значения
-                .add("pwd", "5L5AUFV")//password
+                .add("lgn", login) // "Student99544" для работы входа, для обхода написаны правильные значения
+                .add("pwd", password)//password "5L5AUFV"
                 .add("g", "RIBO-01-21")//
                 .build();
         Request req = new Request.Builder()
